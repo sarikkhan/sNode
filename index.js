@@ -1,0 +1,11 @@
+const express = require("express");
+// const mongoose = require("mongoose");
+const mongodb = require("./config/mongoDB");
+// const User = require("./model/UserSchema");
+// const bcrypt = require("bcryptjs");
+// const { check, validationResult } = require("express-validator");
+const app = express();
+// app.use(express.json());
+console.log(__dirname);
+app.use("/", require("./routes/index.js"));
+app.listen(4000);
